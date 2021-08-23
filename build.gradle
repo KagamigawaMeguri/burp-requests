@@ -1,0 +1,21 @@
+plugins {
+    id 'java'
+    id "com.github.johnrengelman.shadow" version "7.0.0"
+}
+
+group 'org.example'
+version '0.25'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    testImplementation 'org.junit.jupiter:junit-jupiter-api:5.7.2'
+    testRuntimeOnly 'org.junit.jupiter:junit-jupiter-engine:5.7.2'
+    implementation 'net.portswigger.burp.extender:burp-extender-api:2.2'
+}
+
+test {
+    useJUnitPlatform()
+}

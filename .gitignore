@@ -37,3 +37,4 @@ src/burp/IMessageEditorTab.java
 src/burp/ICookie.java
 .idea
 .gradle
+build
